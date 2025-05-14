@@ -68,11 +68,12 @@ function showBottomTrunk(center) {
 
 function showFullPine(height, story) {
     for (let i = 0; i < story; i++) {
-        showPineStory(height, i, height - i);
+        showPineStory(height, i, story - 1 - i);
     }
-    showBottomTrunk(5);
+    // full bullshit, need changes when i would do it
+    showBottomTrunk(height + 2);
 }
 
 // execute code
 
-showFullPine(3, 3);
+showFullPine(3, 4);
